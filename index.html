@@ -48,19 +48,32 @@
                                 <div id="myCard" class="my-card">
                                         <textarea name="card" id="card" rows="10" class="card"></textarea>
                                 </div>
-
-                                <div id="setType" class="set-type">
-                                        <div id="typeTopic" class="my-type">Topic</div>
+                                        <!-- <div id="typeTopic" class="my-type">Topic</div>
                                         <div id="typeTopic" class="my-type">Body</div>
-                                        <div id="typeTopic" class="my-type">Graphic</div>
-                                </div>
+                                        <div id="typeTopic" class="my-type">Graphic</div> -->
+                                        
+                                        <form class="set-type" id="setType">
+                                                <label for="bodyBtn">
+                                                        <input type="radio" id="bodyBtn" name="type" value="2">
+                                                        <span class="checkmark" style="text-align: center;">topic</span>
+                                                </label>
+                                                <label for="topicBtn">
+                                                        <input type="radio" id="topicBtn" name="type" value="1">
+                                                        <span class="checkmark" style="text-align: center;">body</span>
+                                                </label>
+                                                <label for="imageBtn">
+                                                        <input type="radio" id="imageBtn" name="type" value="3">
+                                                        <span class="checkmark" style="text-align: center;">image</span>
+                                                </label>
+                                        </form>
+
                                 <div id="addCardBtn" class="add-card-btn">
                                         <button class="add-card" id="addCard">add card</button>
                                 </div>
                         </div>
 
                         <div id="cardList" class="card-list">
-                                all cards
+                                
                         </div>
 
                 </aside>
