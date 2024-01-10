@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+</head>
+<body>
+
+        <div id="app" class="app">
+
+                <main id="myMain" class="my-main"></main>
+
+                <aside id="sideMenu" class="my-side">
+
+                        <!-- LOGO  -->
+                        <h1 id="logo" class="logo">Scripta</h1>
+
+                        <div id="editCard" class="edit-card">
+
+                                <div id="metrix" class="metrix">
+                                        <div id="countTopic" class="count-topic">
+
+                                                <div id="count" class="count">
+                                                        <button id="incrementPage" class="page-btn">+</button>
+                                                        
+                                                        <p id="pageNum" class="page-num">00</p>
+
+                                                        <button id="decrementPage" class="page-btn">-</button>
+                                                </div>
+
+                                                <div id="cardTopic" class="card-topic">
+
+                                                        <input type="text" name="topic" id="topic" class="topic" 
+                                                        placeholder="Input Topic Here">
+                                                </div>
+
+                                        </div>
+
+                                        <div id="setDuration" class="set-duration">
+                                                <input type="range" name="duration" id="duration" 
+                                                class="duration">
+                                        </div>
+                                </div>
+
+                                <!-- THE EDITABLE CARD -->
+                                <div id="myCard" class="my-card">
+                                        <textarea name="card" id="card" rows="10" class="card"></textarea>
+                                </div>
+
+                                <div id="setType" class="set-type">
+                                        <div id="typeTopic" class="my-type">Topic</div>
+                                        <div id="typeTopic" class="my-type">Body</div>
+                                        <div id="typeTopic" class="my-type">Graphic</div>
+                                </div>
+                                <div id="addCardBtn" class="add-card-btn">
+                                        <button class="add-card" id="addCard">add card</button>
+                                </div>
+                        </div>
+
+                        <div id="cardList" class="card-list">
+                                all cards
+                        </div>
+
+                </aside>
+        </div>
+
+        <script type="module" src="./script.js"></script>
+</body>
+</html>
